@@ -1,0 +1,89 @@
+Meeting 4
+Indra Dipanegara Tan - 22/497954/PA/21468
+
+Github Link:
+
+This document explains two C++ programs: one that calculates the sum of all natural numbers up to a given number and another that prints the multiplication table of a given integer. Both programs come with Makefiles to handle compilation, running, testing, and cleaning of compiled files. The test cases are included in a test.txt file for automated testing. This document will provide an in-depth explanation of the logic behind each program, how to compile and run them, and how to perform tests using the Makefile.
+Program 1: Sum of Natural Numbers
+2.1 Problem Description
+The first program calculates the sum of all natural numbers up to a given number n. For example, if the input is 5, the output should be 15, which corresponds to the sum 1 + 2 + 3 + 4 + 5.
+2.2 Program Logic
+The program prompts the user for an integer input n.
+It uses a for loop to iterate from 1 to n.
+During each iteration, the current number is added to an accumulator variable sum.
+After the loop completes, the final sum is displayed to the user.
+2.3 Key Concepts:
+For Loop: The for loop runs from i = 1 to i = n, adding each i to the sum.
+Input and Output: The program uses cin to take input and cout to display the result.
+Edge Case: If n = 1, the loop will still work correctly, as it will simply return sum = 1.
+2.5 How to Run the Sum Program
+First, compile the program using the Makefile:
+make sum
+
+Then run the program:
+make run-sum
+You will be prompted to enter a number, and the program will display the sum of all natural numbers up to that number.
+
+Program 2: Multiplication Table
+3.1 Problem Description
+The second program prints the multiplication table for a given integer n from n * 1 to n * 10.
+3.2 Program Logic
+The program prompts the user to enter a number n.
+It uses a for loop to multiply the input number n by integers from 1 to 10.
+During each iteration, it calculates and displays the product of n and the current iteration value.
+3.3 Key Concepts:
+For Loop: The for loop runs from i = 1 to i = 10, printing n * i in each iteration.
+Formatted Output: The output format uses cout to print a clean, readable multiplication table with the structure n x i = result.
+3.5 How to Run the Multiplication Program
+First, compile the program using the Makefile:
+make multiplication
+Then run the program:
+
+make run-multiplication
+You will be prompted to enter a number, and the program will display the multiplication table for that number.
+Makefile Explanation
+The Makefile automates the process of compiling, running, testing, and cleaning up files for both programs. Below is a detailed explanation of each target in the Makefile.
+4.1 Compilation
+To compile both programs, use:
+make
+This will compile both sum.cpp and multiplication.cpp using g++ and generate the executables sum and multiplication.
+4.2 Running the Programs
+To run the sum of natural numbers program:
+make run-sum
+
+To run the multiplication table program:
+make run-multiplication
+
+4.3 Testing the Programs
+The make test-sum and make test-multiplication commands automatically test the programs using the input-output pairs provided in test.txt.
+The test-sum target reads inputs from test.txt, executes the program, and compares the actual output with the expected output.
+Similarly, test-multiplication runs the multiplication program and verifies its output.
+
+
+4.4 Cleaning Up
+To clean the compiled files, use:
+make clean
+This command deletes the executable files (sum and multiplication), freeing up space and preventing clutter.
+
+5. Test Cases Explanation
+5.1 Test Cases for Sum of Natural Numbers
+The file test.txt contains five test cases for the sum program, including different edge cases like n = 1. Each test case is structured as:
+makefile
+Copy code
+Input: 5
+Output: Sum = 15
+
+5.2 Test Cases for Multiplication Table
+Similarly, the test.txt file includes five test cases for the multiplication program. For example:
+makefile
+Copy code
+Input: 4
+Output:
+4 x 1 = 4
+4 x 2 = 8
+...
+4 x 10 = 40
+
+6. Conclusion
+The two programs are simple implementations of common mathematical tasks, calculating the sum of natural numbers and generating a multiplication table. By using a Makefile, the process of compiling, running, and testing the programs becomes streamlined and user-friendly. 
+
