@@ -1,0 +1,14 @@
+input: 5
+Output: Sum = 15
+
+Input: 10
+Output: Sum = 55
+
+Input: 3
+Output: Sum = 6
+
+Input: 1
+Output: Sum = 1
+
+Input: 7
+Output: Sum = 28
