@@ -1,0 +1,64 @@
+Meeting 5
+Indra Dipanegara Tan
+22/497954/PA/21468
+
+Overview of the Problems
+Problem 1: FizzBuzz
+The FizzBuzz problem is a classic coding challenge that involves printing numbers from 1 to 100, but with specific conditions:
+For multiples of 3, print "Fizz".
+For multiples of 5, print "Buzz".
+For numbers that are multiples of both 3 and 5, print "FizzBuzz".
+The solution requires using a std::vector<std::string> to store the results of each number or its corresponding word ("Fizz", "Buzz", or "FizzBuzz") before printing them.
+Problem 2: Reverse Array
+In the Reverse Array problem, the task is to write a function that takes a std::vector<int> as input and returns a new vector that contains the elements of the input vector in reverse order.
+Approach and Algorithm
+Problem 1: FizzBuzz
+Approach:
+We iterate through numbers from 1 to 100.
+For each number, we check if it's divisible by 3, 5, or both using the modulus operator (%).
+If divisible by 3 and 5, we store "FizzBuzz" in the vector.
+If divisible by only 3, we store "Fizz".
+If divisible by only 5, we store "Buzz".
+If none of these conditions apply, we store the number itself (converted to a string).
+The results are stored in a std::vector<std::string>, which is printed after the loop completes.
+
+Algorithm:
+Create an empty vector result of type std::vector<std::string>.
+Loop from 1 to 100.
+For each number i, check the conditions:
+If i % 3 == 0 && i % 5 == 0, push "FizzBuzz".
+If i % 3 == 0, push "Fizz".
+If i % 5 == 0, push "Buzz".
+Otherwise, push std::to_string(i).
+After the loop, print all the values in the vector.
+Problem 2: Reverse Array
+Approach:
+We take an input vector of integers.
+A new empty vector, reversedArr, is created.
+We iterate through the input vector from the last element to the first element, and each element is pushed into the reversedArr.
+Finally, the reversed vector is returned and printed.
+Algorithm:
+Create an empty vector reversedArr of type std::vector<int>.
+Loop through the input vector in reverse, from the last element to the first.
+Push each element into the reversedArr.
+Return the reversed vector.
+
+Usage of std::vector
+Both problems utilize the C++ std::vector to store and manipulate data dynamically.
+In FizzBuzz:
+A std::vector<std::string> is used to store the result of each computation.
+The size of the vector grows dynamically as we append results for each number from 1 to 100.
+
+
+In Reverse Array:
+A std::vector<int> is used to represent both the input array and the reversed array.
+The vector allows easy insertion of elements, which is particularly useful when appending elements from the back of the original array.
+FizzBuzz Code Snippet:
+
+
+
+Reverse Array Code Snippet:
+
+
+
+
