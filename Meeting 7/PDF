@@ -1,0 +1,31 @@
+Multi-Function Program with Recursive and Simple Mathematical Operations
+
+Indra Dipanegara Tan - 22/497954/PA/21468
+
+1. Introduction
+The program uses a modular approach, where each functionality is implemented as a separate subprogram. A menu-driven interface allows users to select the desired operation, ensuring ease of use.
+2. Functionalities
+2.1 Simple Mathematical Operations
+The calculate function performs basic arithmetic operations:
+Addition: Adds two integers.
+Subtraction: Subtracts one integer from another.
+The user specifies the operation type (add or subtract) and provides two integers as input.
+2.2 Factorial Calculation
+The factorial function computes the factorial of a given number xxx using recursion:
+Base Case: If x=0x = 0x=0 or x=1x = 1x=1, return 1.
+Recursive Case: For x>1x > 1x>1, compute x×(x−1)!x \times (x - 1)!x×(x−1)!.
+2.3 GCD Calculation
+The gcd function calculates the greatest common divisor of two integers aaa and bbb using the Euclidean algorithm:
+Base Case: If b=0b = 0b=0, return aaa.
+Recursive Case: Compute gcd(b,amod  b)\text{gcd}(b, a \mod b)gcd(b,amodb).
+
+
+3. Implementation
+
+The program uses a menu-driven interface to guide the user:
+Prompt the user to select an operation.
+Execute the corresponding function based on the choice.
+Display the result..
+
+4. Conclusion
+The C++ program combines three functionalities into a single program. The modular structure, combined with recursion for the factorial and GCD computations, makes the code efficient and the menu provides a way to interact with the program. 
