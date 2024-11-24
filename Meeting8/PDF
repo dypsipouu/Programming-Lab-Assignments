@@ -1,0 +1,93 @@
+Student Data Sorting and Searching
+Indra Dipanegara Tan - 22/497954/PA/21468
+
+Link Github: https://github.com/dypsipouu/Programming-Lab-Assignments/tree/main/Meeting%206
+Dataset
+NISN
+Nama
+Value
+9960312699
+Handi Ramadhan
+90
+9963959682
+Rio Alfandra
+55
+9950310962
+Ronaldo Valentino Uneputty
+80
+9970272750
+Achmad Yaumil Fadjri R.
+60
+9970293945
+Alivia Rahma Pramesti
+70
+9952382180
+Ari Lutfianto
+65
+9965653989
+Arief Budiman
+60
+
+
+Implementation Details
+1. Sorting Algorithms
+Three sorting algorithms were implemented to organize the dataset:
+Insertion Sort:
+Used to sort the data by NISN in descending order.
+Algorithm iteratively shifts elements to insert the current element in the correct position.
+Selection Sort:
+Used to sort the data by Value in descending order.
+Algorithm finds the maximum element in the unsorted portion of the list and swaps it with the first element.
+Bubble Sort:
+Also used to sort the data by Value in descending order.
+Algorithm repeatedly swaps adjacent elements if they are in the wrong order.
+2. Searching Algorithms
+Binary Search:
+Efficiently finds a student with NISN = 9950310962.
+The dataset is first sorted by NISN in ascending order for binary search.
+The algorithm returns the Nama and Value of the matched student or indicates that no match is found.
+Sequential Search:
+Used to locate students with Value = 60 and modify their Nama field to "Joko".
+3. Output Functions
+A utility function displays the dataset after each operation.
+
+Results
+
+Sorted by NISN (Insertion Sort, Descending):
+
+NISN: 9970293945, Nama: Alivia Rahma Pramesti, Value: 70
+NISN: 9970272750, Nama: Achmad Yaumil Fadjri R., Value: 60
+NISN: 9965653989, Nama: Arief Budiman, Value: 60
+NISN: 9963959682, Nama: Rio Alfandra, Value: 55
+NISN: 9960312699, Nama: Handi Ramadhan, Value: 90
+NISN: 9952382180, Nama: Ari Lutfianto, Value: 65
+NISN: 9950310962, Nama: Ronaldo Valentino Uneputty, Value: 80
+
+Sorted by Value (Selection Sort and Bubble Sort, Descending):
+
+NISN: 9960312699, Nama: Handi Ramadhan, Value: 90
+NISN: 9950310962, Nama: Ronaldo Valentino Uneputty, Value: 80
+NISN: 9970293945, Nama: Alivia Rahma Pramesti, Value: 70
+NISN: 9952382180, Nama: Ari Lutfianto, Value: 65
+NISN: 9970272750, Nama: Achmad Yaumil Fadjri R., Value: 60
+NISN: 9965653989, Nama: Arief Budiman, Value: 60
+NISN: 9963959682, Nama: Rio Alfandra, Value: 55
+
+
+Binary Search for NISN = 9950310962:
+
+NISN: 9950310962, Nama: Ronaldo Valentino Uneputty, Value: 80
+
+Dataset after Modifying Nama for Value = 60 (Sequential Search):
+
+NISN: 9960312699, Nama: Handi Ramadhan, Value: 90
+NISN: 9963959682, Nama: Rio Alfandra, Value: 55
+NISN: 9950310962, Nama: Ronaldo Valentino Uneputty, Value: 80
+NISN: 9970272750, Nama: Joko, Value: 60
+NISN: 9970293945, Nama: Alivia Rahma Pramesti, Value: 70
+NISN: 9952382180, Nama: Ari Lutfianto, Value: 65
+NISN: 9965653989, Nama: Joko, Value: 60
+
+Conclusion
+This project successfully demonstrated the application of fundamental sorting and searching algorithms to manage a structured dataset of student information. The sorting algorithms, including Insertion Sort, Selection Sort, and Bubble Sort, effectively organized the dataset by NISN and Value in descending order, while Binary Search provided an efficient method to locate a specific student by their NISN. Sequential Search was used to modify the Nama field for students with a specific Value, showcasing its versatility for targeted updates. T
+he results validate the correctness and reliability of the implemented algorithms, and the inclusion of a Makefile streamlined the compilation and execution process, ensuring an efficient workflow. This project highlights the practical utility of these algorithms in real-world scenarios and sets a foundation for further enhancements, such as dynamic data handling and the integration of more advanced algorithms for improved performance and usability.
